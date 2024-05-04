@@ -8,8 +8,10 @@ set -e
 brew install git
 brew install --cask github
 brew install --cask visual-studio-code
+brew install --cask warp
 
 # browsers
+brew install --cask brave-browser
 brew install --cask firefox
 brew install --cask google-chrome
 
@@ -35,22 +37,21 @@ brew install terraform terragrunt
 
 # misc
 brew install --cask obsidian
+brew install --cask discord
 brew install --cask signal
+brew install --cask nordvpn
 
 # ollama
 brew install ollama
 open -a "ollama"
 ollama pull codellama:latest
 ollama pull dolphin-mixtral:latest
-# ollama pull llama2:70b
-# ollama pull llama2:latest
+ollama pull dolphin-llama3
 ollama pull llama2-uncensored:70b
 ollama pull llama2-uncensored:latest
 ollama pull llama3:70b
 ollama pull llama3:8b
-# ollama pull orca2:13b
-# ollama pull orca2:latest
-# ollama pull wizardlm2:latest
 
 # install other apps
 open -a "Google Chrome" "https://apps.apple.com/us/app/magnet/id441258766?mt=12"
+open -a "Google Chrome" "https://music.youtube.com/"
