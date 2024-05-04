@@ -15,6 +15,8 @@ brew install --cask google-chrome
 
 # JavaScript
 brew install node nvm jq oven-sh/bun/bun
+nvm install --lts
+nvm install 20
 
 # Docker
 brew install --cask docker
@@ -35,6 +37,20 @@ brew install terraform terragrunt
 brew install --cask obsidian
 brew install --cask signal
 
-# https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64
-# https://desktop.github.com/
-# https://apps.apple.com/us/app/magnet/id441258766?mt=12
+# ollama
+brew install ollama
+open -a "ollama"
+ollama pull codellama:latest
+ollama pull dolphin-mixtral:latest
+# ollama pull llama2:70b
+# ollama pull llama2:latest
+ollama pull llama2-uncensored:70b
+ollama pull llama2-uncensored:latest
+ollama pull llama3:70b
+ollama pull llama3:8b
+# ollama pull orca2:13b
+# ollama pull orca2:latest
+# ollama pull wizardlm2:latest
+
+# install other apps
+open -a "Google Chrome" "https://apps.apple.com/us/app/magnet/id441258766?mt=12"
